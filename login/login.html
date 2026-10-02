@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="login.css">
     <!-- o tipo está como modulo pela exigencia do RF12, por conta que trabalharei com export e import -->
     <script type="module" src = "login.js" defer></script>
+    <link rel="stylesheet" href="login.css">
     <title>Login AVA-EDUCA+</title>
 </head>
 <body>
     <main>
-        <h1>Login AVA-EDUCA+</h1>
         <!-- deve ter Email, Senha, botão Entrar e o link “Esqueceu sua senha?”. -->
-        <form id = "formLogin">
+        <form id="formLogin">
+            <h1>Login AVA-EDUCA+</h1>
             <div>
                 <label for = "email">E-mail</label>
                 <input type="email" name="email" id="email" placeholder= "Digite seu email" required>
@@ -25,8 +25,9 @@
             <div>
                 <button type="submit">Entrar</button>
             </div>
-            <a href="#">Esqueceu sua senha?</a>
-
+            <a id = "esqueceuSenha" href="#">Esqueceu sua senha?</a>
+            <!--Reservado para a mensagem de erro-->
+            <p id="mensagemErro"></p>
         </form>
 
     </main>

@@ -10,7 +10,7 @@ export function login(usuario, senha) {
             resolve (usuarioEncontrado);
         }
         else{
-            reject(new Error("Credenciais inválidas"));
+            reject(new Error("Credenciais inválidas, tente novamente"));
         }
 
     })
