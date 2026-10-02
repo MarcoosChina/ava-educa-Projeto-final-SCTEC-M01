@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #d8dadb;
+    font-family: Arial, sans-serif;
+    color: #334155;
+}
+
+main {
+    width: 100%;
+    max-width: 400px;
+    padding: 35px;
+    background-color: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+}
+
+h1 {
+    margin-bottom: 25px;
+    text-align: center;
+    color: #1e3a8a;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #2563eb;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+#esqueceuSenha {
+    text-align: center;
+    color: #2563eb;
+    text-decoration: none;
+}
+
+#esqueceuSenha:hover {
+    text-decoration: underline;
+}
+
+#mensagemErro {
+    min-height: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+@media (max-width: 480px) {
+    main {
+        padding: 25px 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
