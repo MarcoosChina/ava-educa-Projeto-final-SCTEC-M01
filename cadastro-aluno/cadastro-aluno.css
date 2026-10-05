@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #212121;
+}
+
+/* Cabeçalho */
+
+header {
+    margin-left: 220px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+#nomeUsuario {
+    margin-top: 8px;
+}
+
+/* Menu lateral */
+
+aside {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 220px;
+    height: 100vh;
+    padding: 30px 15px;
+    background-color: #ffffff;
+    border-right: 1px solid #e0e0e0;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    margin-bottom: 10px;
+}
+
+nav a {
+    display: block;
+    padding: 12px;
+    color: #1e3a8a;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+nav a:hover {
+    background-color: #f1f5f9;
+}
+
+nav li:nth-child(2) {
+    padding: 12px;
+    color: #999999;
+    cursor: not-allowed;
+}
+
+#sair {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 6px;
+    background-color: #eeeeee;
+    color: #333333;
+    cursor: pointer;
+}
+
+#sair:hover {
+    background-color: #dddddd;
+}
+
+/* Conteúdo */
+
+main {
+    margin-left: 220px;
+    padding: 30px;
+}
+
+#cadastro {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+}
+
+#cadastro h2 {
+    margin-bottom: 25px;
+    font-size: 24px;
+}
+
+/* Formulário */
+
+#formCadastroAluno {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#formCadastroAluno div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#formCadastroAluno label {
+    font-weight: 600;
+}
+
+#formCadastroAluno input,
+#formCadastroAluno select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-size: 16px;
+    background-color: #ffffff;
+}
+
+#formCadastroAluno input:focus,
+#formCadastroAluno select:focus {
+    outline: none;
+    border-color: #1e3a8a;
+}
+
+#formCadastroAluno button {
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #1e3a8a;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#formCadastroAluno button:hover {
+    background-color: #172f70;
+}
