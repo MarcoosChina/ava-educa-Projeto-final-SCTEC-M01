@@ -73,3 +73,26 @@ main {
     margin-left: 220px;
     padding: 30px;
 }
+
+#dashboard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    background-color: #e7e6e6;
+}
+
+.card-curso {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #838181;
+}
+
+.card-curso h2 {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.card-curso p {
+    margin-bottom: 8px;
+}
