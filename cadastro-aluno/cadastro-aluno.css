@@ -69,16 +69,18 @@ nav li:nth-child(2) {
 #sair {
     width: 100%;
     padding: 12px;
-    margin-top: 10px;
+    margin-top: 340px;
     border: none;
     border-radius: 6px;
-    background-color: #eeeeee;
+    background-color: #dad9d9;
     color: #333333;
     cursor: pointer;
 }
 
+
 #sair:hover {
-    background-color: #dddddd;
+    background-color: #d63636;
+    color: #ffffff;
 }
 
 /* Conteúdo */
