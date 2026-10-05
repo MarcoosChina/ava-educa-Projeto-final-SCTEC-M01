@@ -69,18 +69,16 @@ nav li:nth-child(2) {
 #sair {
     width: 100%;
     padding: 12px;
-    margin-top: 340px;
+    margin-top: 10px;
     border: none;
     border-radius: 6px;
-    background-color: #dad9d9;
+    background-color: #eeeeee;
     color: #333333;
     cursor: pointer;
 }
 
-
 #sair:hover {
-    background-color: #d63636;
-    color: #ffffff;
+    background-color: #dddddd;
 }
 
 /* Conteúdo */
@@ -91,6 +89,7 @@ main {
 }
 
 #cadastro {
+    width: 100%;
     max-width: 700px;
     margin: 0 auto;
     padding: 30px;
@@ -150,4 +149,63 @@ main {
 
 #formCadastroAluno button:hover {
     background-color: #172f70;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+    header {
+        margin-left: 0;
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    aside {
+        position: static;
+        width: 100%;
+        height: auto;
+        padding: 15px;
+        border-right: none;
+        border-bottom: 1px solid #e0e0e0;
+    }
+
+    nav li {
+        margin-bottom: 5px;
+    }
+
+    nav a,
+    nav li:nth-child(2) {
+        padding: 10px;
+    }
+
+    #sair {
+        margin-top: 5px;
+    }
+
+    main {
+        margin-left: 0;
+        padding: 15px;
+    }
+
+    #cadastro {
+        padding: 20px 15px;
+    }
+
+    #cadastro h2 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    #formCadastroAluno {
+        gap: 15px;
+    }
+
+    #formCadastroAluno input,
+    #formCadastroAluno select,
+    #formCadastroAluno button {
+        font-size: 16px;
+    }
 }
